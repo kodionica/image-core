@@ -1,0 +1,37 @@
+{
+  "name":              "kodionica/image-core",
+  "description":       "Framework-agnostic PHP library for image processing, optimization and conversion.",
+  "type":              "library",
+  "version":           "0.0.1",
+  "licence":           "MIT",
+  "autoload":          {
+	"psr-4": {
+	  "Kodionica\\ImageCore\\": "src/"
+	}
+  },
+  "autoload-dev":      {
+	"psr-4": {
+	  "Kodionica\\ImageCore\\Tests\\": "tests/"
+	}
+  },
+  "authors":           [
+	{
+	  "name":  "Kodionica",
+	  "email": "38115532+kodionica@users.noreply.github.com"
+	}
+  ],
+  "scripts":           {
+	"test":    "phpunit",
+	"analyse": "phpstan analyse src --level=8"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable":     true,
+  "require":           {
+	"php":             "^8.2",
+	"symfony/process": "^8.1"
+  },
+  "require-dev":       {
+	"phpstan/phpstan": "^2.3",
+    "phpunit/phpunit": "^11"
+  }
+}
